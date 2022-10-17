@@ -15,38 +15,13 @@ function addData(event) {
 
     image = URL.createObjectURL(image[0]);
 
-    let technologies = [nodejs, react, next, tpescrip];
+    let technologies = {
+        nodejs, 
+        react, 
+        next, 
+        tpescrip
+    }
 
-    for(i in technologies) {
-
-        let w = document.createElement("IMG");
-        if (technologies[i] == true) {
-            w.setAttribute("src", "image/NodeJs.png");
-            w.setAttribute("width", "30px");
-            document.body.appendChild(w);
-        } 
-
-
-        // if(technologies[0] == true){
-        //         //create element image
-        //         w.setAttribute("src", "image/NodeJs.png");
-        //         w.setAttribute("width", "30px");
-        //         document.body.appendChild(w);
-        //     } if (technologies[1] == true) {
-        //         x.setAttribute("src", "image/react.png");
-        //         x.setAttribute("width", "30px");
-        //         document.body.appendChild(x);
-        //     } if (technologies[2] == true) {
-        //         y.setAttribute("src", "image/next-js.png");
-        //         y.setAttribute("width", "30px");
-        //         document.body.appendChild(y);
-        //     } else (technologies[3] == true)
-        //         z.setAttribute("src", "image/Typescript.png");
-        //         z.setAttribute("width", "30px");
-        //         document.body.appendChild(z);
-            
-        
-        }
 
     let project = {
         title,
@@ -78,9 +53,6 @@ function renderBlog() {
                                 </a>
                             </h3>
                             <div>duration: ${timeDuration(data[index].startDate, data[index].endDate)}</div>
-                            <div>
-                                <p id="output"></p>
-                            </div>
                             <p>${data[index].content}</p>
                             <div>
                                 <a ${data[index].technologies[index]}></a>
