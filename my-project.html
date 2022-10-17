@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>My Project</title>
+        <link rel="stylesheet" href="css/project.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <a href="index.html"><img src="image/logo.png" alt="logo"/></a>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="my-project.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <form onsubmit="addData(event)">
+            <div class="form-page">
+                <div>
+                    <h2>ADD MY PROJECT</h2>
+                </div>
+                <div>
+                    <label for="input-title">Project Name</label>
+                    <input class="edit-one" type="text" id="input-title">
+                </div>
+                <div  class="date-view">
+                    <div style="flex: 50%;">
+                        <label for="start-date">Start Date</label>
+                        <input class="edit-one" type="date" id="start-date">
+                    </div>
+                    <div style="flex: 50%;">
+                        <label for="end-date">End Date</label>
+                        <input class="edit-one" type="date" id="end-date">
+                    </div>
+                </div>
+                <div>
+                    <label for="input-desc">Description</label>
+                    <textarea name="desc" id="input-desc" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label name="technologies" style="width: 100%;" for="input-techno">Technologies</label><br>
+                    <div style="display: flex;">
+                        <div style="flex: 50%;">
+                            <div>
+                                <input name="technologies" type="checkbox" id="input-node" value="nodejs">
+                                <label for="input-techno">Node Js</label>
+                            </div>
+                            <div>
+                                <input name="technologies" type="checkbox" id="input-react">
+                                <label for="input-techno">React Js</label>
+                            </div>
+                        </div>
+                        <div style="flex: 50%;">
+                            <div>
+                                <input name="technologies" type="checkbox" id="input-next">
+                                <label for="input-techno">Next Js</label>
+                            </div>
+                            <div>
+                                <input name="technologies" type="checkbox" id="input-tpscryp">
+                                <label for="input-techno">TypeScript</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="input-image">Upload Image</label>
+                    <input class="edit-one" type="file" id="input-image">
+                </div>
+
+                <button>submit</button>
+            </div>
+        </form>
+        <div class="project-edit">
+            <h2>MY PROJECT</h2>
+            <div id="contents" class="flex-project">
+            </div>
+        </div>
+    </body>
+    <script src="js/project.js"></script>
+</html>

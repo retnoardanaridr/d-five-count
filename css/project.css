@@ -1,0 +1,153 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    background-color: #bebebe;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: rgb(230, 225, 225);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10%;
+}
+
+.nav-left {
+    flex: 50%;
+    color: black;
+}
+
+.nav-left a {
+    color: black;
+}
+
+.nav-left a:hover {
+    font-weight: bold;
+}
+
+.nav-right {
+    flex: 50%;
+    text-align: end;
+}
+
+.nav-right a {
+    background-color: #1f1e1e;
+    border-radius: 9px;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 450px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.form-page {
+    /* background-color: aquamarine; */
+    width: 550px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.date-view {
+    display: flex;
+    flex: auto;
+}
+
+.checkbox-view {
+    /* display: flex; */
+    background-color: blue;
+}
+
+form div {
+    margin: 2.5px 0;
+}
+
+textarea {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 1px 0px;
+}
+
+.edit-one {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 1px 0px;
+}
+
+button {
+    justify-content: end;
+    margin-left: 480px;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+}
+
+div.project-edit {
+    background-color: white;
+}
+
+h3 {
+    color: black;
+}
+
+.flex-project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-project {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.text-card {
+    padding: 0 10px 17px 10px;
+}
+
+div img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+div p {
+    text-align: justify;
+}
+
+.btn-page {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    flex: 50%;
+    text-align: center;
+    margin-top: 8px;
+}
