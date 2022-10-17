@@ -58,7 +58,7 @@ div.container {
     display: flex;
     background-color: white;
     width: auto;
-    height: 450px;
+    height: auto;
     margin: 30px 100px;
     padding: 30px 150px;
     border-radius: 5px 5px;
@@ -85,7 +85,7 @@ div.container {
 
 .card {
     width: auto;
-    height: 450px;
+    height: auto;
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
     text-align: center;
     margin: auto;

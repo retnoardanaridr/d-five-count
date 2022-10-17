@@ -45,7 +45,8 @@ function renderBlog() {
         document.getElementById("contents").innerHTML += `
         <div>
             <div style="flex-wrap: wrap;" class="card-project">
-                <img src="${data[index].image}" alt="rimuru">
+                <img style="border-radius: 10px 10px 0 0;
+                            width: 100%;" src="${data[index].image}">
                         <div class="text-card">
                             <h3>
                                 <a href="blog-detail.html" target="_blank">
@@ -85,12 +86,15 @@ function timeDuration() {
     let hoursInDay = 24 
 
     let time = Math.floor(dateTwo-dateOne);
+    let durationMonth = Math.floor(time / (milisecond * secondInHours * hoursInDay * 30));
     let durationDays = Math.floor(time / (milisecond * secondInHours * hoursInDay));
     let durationHours = Math.floor(time / (milisecond * 60 * 60));
     let durationMinutes = Math.floor(time / (milisecond * 60));
     let durationSecond = Math.floor(time / milisecond);
 
-    if (durationDays > 0) {
+    if (durationMonth > 0) {
+        return `${durationMonth} months`
+    } else if (durationDays > 0) {
         return `${durationDays} days`
     } else if (durationHours > 0) {
         return `${durationHours} hours`
